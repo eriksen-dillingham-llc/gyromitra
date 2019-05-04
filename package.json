@@ -1,31 +1,47 @@
 {
-  "name": "gyromitra",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "gyromitra",
+    "version": "0.0.1",
+    "private": true,
+    "main": "src/underconstrunction.js",
+    "dependencies": {
+        "color": "^3.1.1",
+        "lodash-es": "^4.17.11",
+        "react": "^16.8.6",
+        "react-delay": "^0.1.0",
+        "react-dom": "^16.8.6",
+        "react-scripts": "^3.0.0",
+        "react-spring": "^8.0.20",
+        "react-three-fiber": "^2.0.12",
+        "react-use-gesture": "^5.0.0",
+        "set": "^1.1.1",
+        "three": "^0.104.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "bit": {
+        "env": {
+            "compiler": "bit.envs/compilers/react@1.0.1"
+        },
+        "componentsDefaultDirectory": "components/{name}",
+        "packageManager": "npm"
+    }
 }
