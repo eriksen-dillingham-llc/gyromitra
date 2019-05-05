@@ -141,7 +141,7 @@ function Scene({ top, mouse }) {
     return (
         <>
             <a.spotLight intensity={1.2} color="white" position={mouse.interpolate((x, y) => [x / 100, -y / 100, 6.5])} />
-            {/*<Effects factor={top.interpolate([0, scrollMax * 0.1, scrollMax * 0.34, scrollMax * 0.35, scrollMax * 0.5, scrollMax * 0.8],[5,0,.4,0,0])} />*/}
+            <Effects factor={top.interpolate([0, scrollMax * 0.1, scrollMax * 0.34, scrollMax * 0.35, scrollMax * 0.5, scrollMax * 0.8],[5,0,.4,0,0])} />
             <Background color={top.interpolate([0, scrollMax * 0.25, scrollMax * 0.8, scrollMax], ['#27282F', '#247BA0', '#70C1B3', '#00b8a4'])} />
             <Stars position={top.interpolate(scrollMax=> [0, scrollMax * 0.25, scrollMax * 0.8, scrollMax])} />
             <Images top={top} mouse={mouse} scrollMax={scrollMax} />
